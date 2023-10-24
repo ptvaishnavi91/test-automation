@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10e80ecf-aa5e-463b-a9db-f4ce2f8341fb" name="Changes" comment="Created pytest homework">
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/Datatypes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/Input_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/Nexus_Oct22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/Nexus_Oct22_orig.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/dq_checks_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/input_files/Maksym_SA Distr Stock 04_2023.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bayer_Project/channel_inventory/standard_file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/New_template_DQ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/Trash/InventoryReport_99999_20230101_ZA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/Trash/Inventory_SA_Distr_Stock_04_2023_duplicates.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/Trash/Inventory_SA_Distr_Stock_04_2023_missingheader.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/Trash/Inventory_SA_Distr_Stock_04_2023_nullvalues.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/Trash/SelloutReport_88888_202304_UA.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/input_files/InventoryReport_9010_09_2023.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/input_files/InventoryReport_9010_12_2023.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bayerProject/channel_inventory/input_files/SelloutReport_9010_09_2023.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/SQL/sqlHW.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/SQL/sqlPractise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/XML/ClassesHW.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/XML/JSON_HW.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/XML/ModuleFilesHW.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/XML/news_input_file.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject1/PythonForDQE/HomeWork/news_input_file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_automation1/tests_loans_dm_test_dim_db_structure.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Wo4QaxlLaBpDYMdlm7G88R40js" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vaishnavi_Peranamall/PycharmProjects/test_automation1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vaishnavi_Peranamall\PycharmProjects\test_automation1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test_automation1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="test_automation1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Vaishnavi_Peranamall\anaconda3\envs\test_automation1\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (test_automation1)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in pytest_homework_01.py" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+      <module name="test_automation1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/pytest_homework_01.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10e80ecf-aa5e-463b-a9db-f4ce2f8341fb" name="Changes" comment="" />
+      <created>1697385583670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697385583670</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Created pytest homework">
+      <created>1698098919429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698098919429</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created pytest homework">
+      <created>1698099280836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698099280836</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created pytest homework">
+      <created>1698169514603</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698169514603</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created pytest homework">
+      <created>1698169546046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698169546047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created pytest homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created pytest homework" />
+  </component>
+</project>

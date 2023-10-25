@@ -22,7 +22,7 @@ Test Case 2
 
 *** Keywords ***
 Assertion failed for Test Case 1
-    Should Be True   ${result}   Expected result for Test Case 1 not met
+    Should Be 2000.00   ${result}   Expected result for Test Case 1 not met
 
 Assertion failed for Test Case 2
-    Should Be True   ${result}   Expected result for Test Case 2 not met
+    Should Be 24000   ${result}   Expected result for Test Case 2 not met

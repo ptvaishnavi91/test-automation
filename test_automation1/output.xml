@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.13 on win32)" generated="20231027 23:58:54.814" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Cases" source="C:\Users\Vaishnavi_Peranamall\PycharmProjects\test_automation1\test_cases.robot">
+<kw name="Connect To Database" library="DatabaseLibrary" type="SETUP">
+<arg>pymssql</arg>
+<arg>${Database}</arg>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<arg>${Host}</arg>
+<arg>${Port}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20231027 23:58:54.869" level="INFO">Connecting using : pymssql.connect(database=TRN, user=vaish_tester, password=***, host=192.168.0.116, port=1433) </msg>
+<status status="PASS" starttime="20231027 23:58:54.844" endtime="20231027 23:58:55.015"/>
+</kw>
+<test id="s1-t1" name="Test Case 1" line="18">
+<kw name="Query" library="DatabaseLibrary">
+<var>${result}</var>
+<arg>select MIN(min_salary) from hr.jobs</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20231027 23:58:55.024" level="INFO">Executing : Query  |  select MIN(min_salary) from hr.jobs </msg>
+<msg timestamp="20231027 23:58:55.029" level="INFO">${result} = [(Decimal('2000.00'),)]</msg>
+<status status="PASS" starttime="20231027 23:58:55.015" endtime="20231027 23:58:55.029"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${result_as_string}</var>
+<arg>${result[0][0]}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231027 23:58:55.029" level="INFO">${result_as_string} = 2000.00</msg>
+<status status="PASS" starttime="20231027 23:58:55.029" endtime="20231027 23:58:55.029"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result_as_string}</arg>
+<arg>2000.00</arg>
+<arg>Assertion failed for Test Case 1</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231027 23:58:55.029" endtime="20231027 23:58:55.029"/>
+</kw>
+<doc>Validate the minimum salary for all the jobs</doc>
+<tag>DataAssertion</tag>
+<status status="PASS" starttime="20231027 23:58:55.015" endtime="20231027 23:58:55.029"/>
+</test>
+<test id="s1-t2" name="Test Case 2" line="25">
+<kw name="Query" library="DatabaseLibrary">
+<var>${result}</var>
+<arg>select MAX(salary) from hr.employees</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20231027 23:58:55.029" level="INFO">Executing : Query  |  select MAX(salary) from hr.employees </msg>
+<msg timestamp="20231027 23:58:55.042" level="INFO">${result} = [(Decimal('24000.00'),)]</msg>
+<status status="PASS" starttime="20231027 23:58:55.029" endtime="20231027 23:58:55.042"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${result_as_string}</var>
+<arg>${result[0][0]}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231027 23:58:55.045" level="INFO">${result_as_string} = 24000.00</msg>
+<status status="PASS" starttime="20231027 23:58:55.042" endtime="20231027 23:58:55.045"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result_as_string}</arg>
+<arg>24000.00</arg>
+<arg>Assertion failed for Test Case 2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231027 23:58:55.046" endtime="20231027 23:58:55.047"/>
+</kw>
+<doc>Validate the maximum salary among all the employees</doc>
+<tag>DataAssertion</tag>
+<status status="PASS" starttime="20231027 23:58:55.029" endtime="20231027 23:58:55.047"/>
+</test>
+<test id="s1-t3" name="Test Case 3" line="32">
+<kw name="Query" library="DatabaseLibrary">
+<var>${result}</var>
+<arg>select job_title from hr.jobs where max_salary in (select MAX(max_salary) from hr.jobs)</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20231027 23:58:55.049" level="INFO">Executing : Query  |  select job_title from hr.jobs where max_salary in (select MAX(max_salary) from hr.jobs) </msg>
+<msg timestamp="20231027 23:58:55.053" level="INFO">${result} = [('President',)]</msg>
+<status status="PASS" starttime="20231027 23:58:55.049" endtime="20231027 23:58:55.053"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result[0][0]}</arg>
+<arg>President</arg>
+<arg>Assertion failed for Test Case 2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231027 23:58:55.053" endtime="20231027 23:58:55.053"/>
+</kw>
+<doc>Verify the job role that has the highest maximum salary</doc>
+<tag>DataAssertion</tag>
+<status status="PASS" starttime="20231027 23:58:55.048" endtime="20231027 23:58:55.056"/>
+</test>
+<test id="s1-t4" name="Test Case 4" line="38">
+<kw name="Query" library="DatabaseLibrary">
+<var>${result}</var>
+<arg>select country_id from hr.countries where country_name='India'</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20231027 23:58:55.058" level="INFO">Executing : Query  |  select country_id from hr.countries where country_name='India' </msg>
+<msg timestamp="20231027 23:58:55.060" level="INFO">${result} = [('IN',)]</msg>
+<status status="PASS" starttime="20231027 23:58:55.058" endtime="20231027 23:58:55.060"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result[0][0]}</arg>
+<arg>IN</arg>
+<arg>Assertion failed for Test Case 2</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231027 23:58:55.060" endtime="20231027 23:58:55.060"/>
+</kw>
+<doc>Validate that the country ID of India is IN</doc>
+<tag>DataAssertion</tag>
+<status status="PASS" starttime="20231027 23:58:55.057" endtime="20231027 23:58:55.060"/>
+</test>
+<status status="PASS" starttime="20231027 23:58:54.814" endtime="20231027 23:58:55.060"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">DataAssertion</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test Cases">Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

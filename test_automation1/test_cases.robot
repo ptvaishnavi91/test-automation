@@ -16,7 +16,7 @@ ${Port}      1433
 *** Test Cases ***
 
 Test Case 1
-	[Documentation]    Validate the minimum salary for all the jobs
+    [Documentation]    Validate the minimum salary for all the jobs
     [Tags]             DataAssertion
     ${result}  Query   select MIN(min_salary) from hr.jobs
     ${result_as_string}  Convert To String  ${result[0][0]}

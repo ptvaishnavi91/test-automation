@@ -16,26 +16,30 @@ ${Port}      1433
 *** Test Cases ***
 
 Test Case 1
-    [Tags]     Validate the minimum salary for all the jobs
-    ${result}  Query     select MIN(min_salary) from hr.jobs
+	[Documentation]    Validate the minimum salary for all the jobs
+    [Tags]             DataAssertion
+    ${result}  Query   select MIN(min_salary) from hr.jobs
     ${result_as_string}  Convert To String  ${result[0][0]}
-    Should Be Equal   ${result_as_string}   2000.00  Assertion failed for Test Case 1
+    Should Be Equal     ${result_as_string}   2000.00  Assertion failed for Test Case 1
 
 Test Case 2
-    [Tags]     Validate the maximum salary among all the employees
+    [Documentation]      Validate the maximum salary among all the employees
+    [Tags]               DataAssertion
     ${result}  Query     select MAX(salary) from hr.employees
     ${result_as_string}  Convert To String  ${result[0][0]}
-    Should Be Equal    ${result_as_string}  24000.00   Assertion failed for Test Case 2
+    Should Be Equal      ${result_as_string}  24000.00   Assertion failed for Test Case 2
 
 Test Case 3
-    [Tags]     Verify the job role that has the highest maximum salary
+    [Documentation]      Verify the job role that has the highest maximum salary
+    [Tags]               DataAssertion
     ${result}  Query     select job_title from hr.jobs where max_salary in (select MAX(max_salary) from hr.jobs)
-    Should Be Equal    ${result[0][0]}  President   Assertion failed for Test Case 2
+    Should Be Equal      ${result[0][0]}  President   Assertion failed for Test Case 2
 
 Test Case 4
-    [Tags]     Validate that the country ID of India is IN
-    ${result}  Query     select country_id from hr.countries where country_name='India'
-    Should Be Equal    ${result[0][0]}  IN   Assertion failed for Test Case 2
+    [Documentation]     Validate that the country ID of India is IN
+    [Tags]              DataAssertion
+    ${result}  Query    select country_id from hr.countries where country_name='India'
+    Should Be Equal     ${result[0][0]}  IN   Assertion failed for Test Case 2
 
 *** Keywords ***
 Assertion failed for Test Case 1
